@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <title>Real Time Chat</title>
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <style type="text/css">
+      #chatArea {
+        min-height: 250px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3 class="jumbotron text-center">
+        Real Time Chat Application
+      </h3>
+
+      <div class="row" style="margin-top: 70px;">
+         <div class="col-md-12">
+            <div id="chatArea" class="col-md-6">
+            </div>
+            <form id="myForm">
+              <div class="row">
+                <div class="col-md-10">
+                  <section id="feedback"></section>
+                  <textarea id="message" rows="5" cols="5" class="form-control"></textarea>     
+                </div>
+                <div class="col-md-2">
+                  <button type="submit" class="btn btn-success">Send</button>  
+                </div>
+              </div>
+            </form>
+         </div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="chat.js"></script>
+  </body>
+</html>

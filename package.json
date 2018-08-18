@@ -1,0 +1,35 @@
+{
+  "name": "real-time-chat-application",
+  "version": "1.0.0",
+  "description": "This is very basic real time chat application to demonstrate the working of socket,io with node,js and express",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaishalgandhi/real-time-chat-application.git"
+  },
+  "keywords": [
+    "realtime",
+    "chat",
+    "socket.io",
+    "node",
+    "express"
+  ],
+  "author": "Vaishal Gandhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaishalgandhi/real-time-chat-application/issues"
+  },
+  "homepage": "https://github.com/vaishalgandhi/real-time-chat-application#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  }
+}
