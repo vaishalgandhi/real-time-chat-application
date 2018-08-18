@@ -43,7 +43,7 @@ io.on('connection', (socket) => {
 	// Listen the new message event
 	socket.on('NEW_MESSAGE', (data) => {
 		// This code will execute when someone sends a message 
-		io.sockets.emit('NEW_MESSAGE', {
+		io.emit('NEW_MESSAGE', {
 			message: data.message,
 			username: socket.username
 		});
@@ -54,7 +54,7 @@ io.on('connection', (socket) => {
 		// When client trigger typing event
 		// at that time we send back username
 		// by emitting typing event back
-		io.sockets.emit('TYPING', {
+		socket.broadcast.emit('TYPING', {
 			username: socket.username
 		});
 	});
